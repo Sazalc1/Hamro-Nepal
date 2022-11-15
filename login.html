@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="UTF-8">
+<head>
+    <title>login | Hamro Nepal</title>
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <script type="text/javascript" src="javascript/javascript.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body onLoad="renderTime();">
+<header>
+    <nav>
+        <div class="logo"> <h1 class="animated infinite heartBeat"></a> 
+            <font color="#FF2626">HAMRO</font>
+            <font color="#0505f5" >NEPAL</font> </h1> </div>
+        <div id="clockDisplay" class="clock"></div>
+        <div class="menu">
+            <a href="index.html">home</a>
+            <a href="gallery.html">gallery</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+            <a href="login.html">login</a>
+        </div>
+    </nav>
+    <div class="row">
+    <div class="col-1">
+            <div class="form-box">
+                <div class="form">
+                    <form class="login-form">
+                        <center><h1 class="main-heading">Login Form</h1></center>
+                        <input type="text"placeholder="user name"/><br><br>
+                        <input type="password"placeholder="password"/><br><br>
+                        <button>LOGIN</button>
+                        <p class="message">Not Registered? <a href="#">Sign Up here</a></p>
+                    </form>
+            
+                    <form class="register-form">
+                        <center> <h1 class="main-heading">Sign Up</h1></center>
+                        <input type="text" placeholder="First Name"/>
+                        <input type="text" placeholder="Last Name"/>
+                        <input type="text" placeholder="Email-Id"/>
+                        <input type="password" placeholder="Password"/>
+                        <input type="Confirm password" placeholder="Confirm Password"/>
+                        <button>REGISTER</button>
+                        <p class="message">Already Registered?<a href="#">Login</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <script>
+        $('.message a').click(function(){$('form').animate({height: "toggle",opacity: "toggle"},"slow");});
+    </script>
+</header>
+<footer>
+    <div id="footer_nav">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="policy.html">PRIVACY POLICY</a></li>
+      </ul>
+    </div>
+    <small>&copy; 2021 Hamro Nepal.</small>
+  </footer>
+</body>
+</html>
